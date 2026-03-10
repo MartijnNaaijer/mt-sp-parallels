@@ -26,6 +26,15 @@ def clean_lex(lex):
 from tf.fabric import Fabric
 
 
+def clean_bhsa_trailer(tr):
+    """Strip masoretic signs from a BHSA trailer_utf8 value.
+    Replaces maqqeph with a space; removes sof pasuk, paseq,
+    and paragraph markers (setuma ס, petucha פ)."""
+    tr = tr.replace('\u05be', ' ')                      # maqqeph → space
+    tr = re.sub(r'[\u05c0\u05c3\u05e1\u05e4]', '', tr)  # sof pasuk, paseq, ס, פ
+    return re.sub(r' +', ' ', tr)                        # collapse multiple spaces
+
+
 def load_bhsa(path):
     F = Fabric(locations=path, silent=True)
     api = F.load("otype book chapter verse g_cons_utf8 trailer_utf8 lex_utf8 nu vt ps gn vs", silent=True)
@@ -38,7 +47,7 @@ def load_sp(path):
     return api
 
 
-def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat, extra_feats=()):
+def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat, extra_feats=(), trailer_clean_fn=None):
     Ft = api.F
     Lt = api.L
     Tt = api.T
@@ -55,6 +64,8 @@ def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat, ext
         for w in words:
             t = getattr(Ft, text_feat).v(w) or ""
             tr = getattr(Ft, trailer_feat).v(w) or ""
+            if trailer_clean_fn:
+                tr = trailer_clean_fn(tr)
             lex = clean_lex(Ft.lex_utf8.v(w) or "")
             nu = Ft.nu.v(w) or ""
             extras = {f: (getattr(Ft, f).v(w) or "") for f in extra_feats}
@@ -364,7 +375,7 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 if __name__ == "__main__":
     print("Loading BHSA...")
     bhsa_api = load_bhsa("bhsa/tf/2021")
-    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8", extra_feats=("ps", "gn", "vt", "vs"))
+    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8", extra_feats=("ps", "gn", "vt", "vs"), trailer_clean_fn=clean_bhsa_trailer)
     print(f"  {len(bhsa_verses)} verses extracted")
 
     print("Loading SP...")
