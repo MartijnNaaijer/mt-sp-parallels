@@ -277,12 +277,6 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 
 <div class="table-wrap">
   <table>
-    <thead>
-      <tr>
-        <th>v.</th>
-        <th>Hebrew Text</th>
-      </tr>
-    </thead>
     <tbody>{rows_html}
     </tbody>
   </table>

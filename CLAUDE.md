@@ -10,11 +10,15 @@ This project extracts Exodus 20 from two Hebrew Bible corpora and generates a si
 
 ## Running
 
+Must be run from the `tf_claude/` parent directory (corpus paths are relative to it):
+
 ```bash
-python extract.py
+cd tf_claude
+python parallel_texts_sp_mt_exodus_20/extract.py
+mv exodus20.html parallel_texts_sp_mt_exodus_20/
 ```
 
-Expects corpus data at `../bhsa/tf/2021` and `../sp/tf/6.0.3` relative to the project root (`tf_claude/`). Outputs `exodus20.html`.
+Corpus data is expected at `bhsa/tf/2021` and `sp/tf/6.0.3` under `tf_claude/`. Outputs `exodus20.html`.
 
 ## Dependencies
 
