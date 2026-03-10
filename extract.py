@@ -110,10 +110,12 @@ def render_verse(word_data, char_marks, extra_class):
             esc = html.escape(cluster)
             inner += f'<span class="{extra_class}">{esc}</span>' if marks[i] else esc
             i = j
-        tip_lines = [f"lex: {lex}", f"ps: {extras.get('ps', '')}", f"nu: {nu}",
-                     f"gn: {extras.get('gn', '')}", f"vt: {extras.get('vt', '')}"]
+        def fmt(v):
+            return "-" if v == "NA" else v
+        tip_lines = [f"lex: {fmt(lex)}", f"ps: {fmt(extras.get('ps', ''))}", f"nu: {fmt(nu)}",
+                     f"gn: {fmt(extras.get('gn', ''))}", f"vt: {fmt(extras.get('vt', ''))}"]
         if 'vs' in extras:
-            tip_lines.append(f"vs: {extras['vs']}")
+            tip_lines.append(f"vs: {fmt(extras['vs'])}")
         tooltip = html.escape("\n".join(tip_lines))
         spans.append(f'<span class="w" data-tip="{tooltip}">{inner}</span>{html.escape(trailer)}')
     return "".join(spans).strip()
