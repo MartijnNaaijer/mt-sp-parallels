@@ -1,0 +1,6043 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genesis 36 — MT &amp; SP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: sans-serif;
+    background: #f7f4ef;
+    color: #222;
+    padding: 2rem 1rem;
+  }
+
+  header {
+    max-width: 960px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot-bhsa { background: #3a6ea5; }
+  .dot-sp   { background: #8b4513; }
+
+  .chapter-nav {
+    max-width: 960px;
+    margin: 0 auto 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .chapter-nav a { color: #3a6ea5; text-decoration: none; }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav .nav-disabled { color: #bbb; }
+
+  .table-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  tbody tr.verse-group:nth-child(4n+1),
+  tbody tr.verse-group:nth-child(4n+2) { background: #faf8f5; }
+
+  td {
+    padding: 0.55rem 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #e8e4dc;
+  }
+
+  tr.verse-group td.bhsa-row { border-bottom: 1px dashed #d0ccc4; }
+  tr.verse-group td.sp-row   { border-bottom: 2px solid #ccc7be; }
+
+  td.vnum {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 3rem;
+    border-bottom: 2px solid #ccc7be;
+  }
+
+  td.heb {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    unicode-bidi: embed;
+  }
+
+  td.bhsa-row { border-left: 3px solid #3a6ea5; }
+  td.sp-row   { border-left: 3px solid #8b4513; }
+
+  .src-label {
+    float: left;
+    font-family: sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-top: 0.45rem;
+  }
+
+  td.bhsa-row .src-label { background: #ddeaf7; color: #3a6ea5; }
+  td.sp-row   .src-label { background: #f5e8de; color: #8b4513; }
+
+  .w {
+    cursor: default;
+    border-radius: 2px;
+    transition: background 0.1s;
+  }
+
+  .w:hover { background: #ffe9a0; }
+
+  #tip {
+    display: none;
+    position: absolute;
+    background: #222;
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: pre;
+    direction: ltr;
+    text-align: left;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .plus-mt { color: #1a5bbf; font-weight: bold; }
+  .plus-sp { color: #c0392b; font-weight: bold; }
+
+  footer {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Genesis / בראשית — Chapter 36</h1>
+  <div class="legend">
+    <span><span class="dot dot-bhsa"></span> BHSA 2021 (MT, consonantal)</span>
+    <span><span class="dot dot-sp"></span> SP 6.0.3 — Samaritan Pentateuch (consonantal)</span>
+  </div>
+</header>
+
+<nav class="chapter-nav"><a href="genesis_35.html">◀ בראשית 35</a> <a href="index.html">index</a> <a href="genesis_37.html">▶ בראשית 37</a></nav>
+
+<div class="table-wrap">
+  <table>
+    <tbody>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">1</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: תולדות
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">תלד<span class="plus-mt">ו</span>ת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -
+vs: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: תולדות
+ps: -
+nu: pl
+gn: f
+vt: -">ת<span class="plus-sp">ו</span>לדת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">2</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: לקח
+ps: p3
+nu: sg
+gn: m
+vt: perf
+vs: qal">לקח</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">נשׁיו</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: בת
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">בנות</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">כנען</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עדה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: אילון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אילון</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חתי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חתי</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">ב<span class="plus-mt">ת</span></span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חוי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חוי</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: לקח
+ps: p3
+nu: sg
+gn: m
+vt: perf">לקח</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: pl
+gn: f
+vt: -">נשׁיו</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: בת
+ps: -
+nu: pl
+gn: f
+vt: -">בנות</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -">כנען</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -">עדה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: אילון
+ps: -
+nu: sg
+gn: m
+vt: -">אילון</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חתי
+ps: -
+nu: sg
+gn: m
+vt: -">חתי</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: unknown
+vt: -">ב<span class="plus-sp">ן</span></span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חוי
+ps: -
+nu: sg
+gn: m
+vt: -">חוי</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">3</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: בשׂמת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">שׂ</span>מת</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: ישׁמעאל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ישׁמעאל</span> <span class="w" data-tip="lex: אחות
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אחות</span> <span class="w" data-tip="lex: נביות
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">נב<span class="plus-mt">י</span>ות</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: מחלת
+ps: -
+nu: sg
+gn: unknown
+vt: -">מ<span class="plus-sp">ח</span><span class="plus-sp">ל</span>ת</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: ישׁמעאל
+ps: -
+nu: sg
+gn: m
+vt: -">ישׁמעאל</span> <span class="w" data-tip="lex: אחות
+ps: -
+nu: sg
+gn: f
+vt: -">אחות</span> <span class="w" data-tip="lex: נביות
+ps: -
+nu: sg
+gn: unknown
+vt: -">נב<span class="plus-sp">א</span>ות</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">4</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: wayq
+vs: qal">תלד</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עדה</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: בשׂמת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">שׂ</span>מת</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: perf
+vs: qal">ילדה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רעואל</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: impf">תלד</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -">עדה</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מחלת
+ps: -
+nu: sg
+gn: unknown
+vt: -">מ<span class="plus-sp">ח</span><span class="plus-sp">ל</span>ת</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: perf">ילדה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -">רעואל</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">5</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: perf
+vs: qal">ילדה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יע<span class="plus-mt">י</span>שׁ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יעלם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">קרח</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">אשׁר</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: pl
+gn: unknown
+vt: perf
+vs: pual">ילדו</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">לו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">כנען</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: perf">ילדה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: unknown
+vt: -">יע<span class="plus-sp">ו</span>שׁ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -">יעלם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -">קרח</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -">אשׁר</span> <span class="w" data-tip="lex: ילד
+ps: p3
+nu: pl
+gn: unknown
+vt: perf">ילדו</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">לו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -">כנען</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">6</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: לקח
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">יקח</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">נשׁיו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בניו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">בנתיו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">כל</span> <span class="w" data-tip="lex: נפשׁ
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">נפשׁות</span> <span class="w" data-tip="lex: בית
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ביתו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: מקנה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מקנהו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">כל</span> <span class="w" data-tip="lex: בהמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בהמתו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">כל</span> <span class="w" data-tip="lex: קנין
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">קנינו</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">אשׁר</span> <span class="w" data-tip="lex: רכשׁ
+ps: p3
+nu: sg
+gn: m
+vt: perf
+vs: qal">רכשׁ</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">כנען</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: הלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ילך</span> <span class="w" data-tip="lex: אל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -"><span class="plus-mt">א</span><span class="plus-mt">ל</span></span> <span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">פני</span> <span class="w" data-tip="lex: יעקב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יעקב</span> <span class="w" data-tip="lex: אח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אחיו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: לקח
+ps: p3
+nu: sg
+gn: m
+vt: impf">יקח</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: pl
+gn: f
+vt: -">נשׁיו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בניו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: pl
+gn: f
+vt: -">בנתיו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -">כל</span> <span class="w" data-tip="lex: נפשׁ
+ps: -
+nu: pl
+gn: f
+vt: -">נפשׁות</span> <span class="w" data-tip="lex: בית
+ps: -
+nu: sg
+gn: m
+vt: -">ביתו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: מקנה
+ps: -
+nu: sg
+gn: m
+vt: -">מקנהו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -">כל</span> <span class="w" data-tip="lex: בהמה
+ps: -
+nu: sg
+gn: f
+vt: -">בהמתו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: כל
+ps: -
+nu: sg
+gn: m
+vt: -">כל</span> <span class="w" data-tip="lex: קנין
+ps: -
+nu: sg
+gn: m
+vt: -">קנינו</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -">אשׁר</span> <span class="w" data-tip="lex: רכשׁ
+ps: p3
+nu: sg
+gn: m
+vt: perf">רכשׁ</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -">כנען</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: הלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ילך</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">מ</span></span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: כנען
+ps: -
+nu: sg
+gn: unknown
+vt: -"><span class="plus-sp">כ</span><span class="plus-sp">נ</span><span class="plus-sp">ע</span><span class="plus-sp">ן</span></span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -">פני</span> <span class="w" data-tip="lex: יעקב
+ps: -
+nu: sg
+gn: m
+vt: -">יעקב</span> <span class="w" data-tip="lex: אח
+ps: -
+nu: sg
+gn: m
+vt: -">אחיו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">7</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: כי
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">כי</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: sg
+gn: m
+vt: perf
+vs: qal">היה</span> <span class="w" data-tip="lex: רכושׁ
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רכושׁם</span> <span class="w" data-tip="lex: רב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רב</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: ישׁב
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc
+vs: qal">שׁבת</span> <span class="w" data-tip="lex: יחדו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">יחדו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: לא
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">לא</span> <span class="w" data-tip="lex: יכל
+ps: p3
+nu: sg
+gn: f
+vt: perf
+vs: qal">יכלה</span> <span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: מגורים
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">מג<span class="plus-mt">ו</span>ריהם</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: נשׂא
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc
+vs: qal">שׂאת</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">אתם</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">פני</span> <span class="w" data-tip="lex: מקנה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מקניהם</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: כי
+ps: -
+nu: -
+gn: -
+vt: -">כי</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: sg
+gn: m
+vt: perf">היה</span> <span class="w" data-tip="lex: רכושׁ
+ps: -
+nu: sg
+gn: m
+vt: -">רכושׁם</span> <span class="w" data-tip="lex: רב
+ps: -
+nu: sg
+gn: m
+vt: -">רב</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: ישׁב
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc">שׁבת</span> <span class="w" data-tip="lex: יחדו
+ps: -
+nu: -
+gn: -
+vt: -">יחדו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: לא
+ps: -
+nu: -
+gn: -
+vt: -">לא</span> <span class="w" data-tip="lex: יכל
+ps: p3
+nu: sg
+gn: f
+vt: perf">יכלה</span> <span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: מגורים
+ps: -
+nu: pl
+gn: m
+vt: -">מגריהם</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: נשׂא
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc">שׂאת</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">אתם</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -">פני</span> <span class="w" data-tip="lex: מקנה
+ps: -
+nu: sg
+gn: unknown
+vt: -">מקניהם</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">8</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ישׁב
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ישׁב</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: הר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">הר</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">שׂעיר</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -
+vs: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ישׁב
+ps: p3
+nu: sg
+gn: m
+vt: impf">ישׁב</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: הר
+ps: -
+nu: sg
+gn: m
+vt: -">הר</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׂעיר</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">9</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: תולדות
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">תלד<span class="plus-mt">ו</span>ת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אבי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: הר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">הר</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">שׂעיר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: תולדות
+ps: -
+nu: pl
+gn: f
+vt: -">ת<span class="plus-sp">ו</span>לדת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -">אבי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: הר
+ps: -
+nu: sg
+gn: m
+vt: -">הר</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׂעיר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">10</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">שׁמות</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עדה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רעואל</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: בשׂמת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">שׂ</span>מת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -">שׁמות</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -">עדה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -">רעואל</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: מחלת
+ps: -
+nu: sg
+gn: unknown
+vt: -">מ<span class="plus-sp">ח</span><span class="plus-sp">ל</span>ת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">11</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: m
+vt: wayq
+vs: qal">יהיו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תימן</span> <span class="w" data-tip="lex: אומר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">א<span class="plus-mt">ו</span>מר</span> <span class="w" data-tip="lex: צפו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צפו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: געתם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">געתם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">קנז</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: m
+vt: impf">יהיו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -">תימן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: אומר
+ps: -
+nu: sg
+gn: unknown
+vt: -">אמר</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: צפו
+ps: -
+nu: sg
+gn: m
+vt: -">צפו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: געתם
+ps: -
+nu: sg
+gn: m
+vt: -">געתם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -">קנז</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">12</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תמנע</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: sg
+gn: f
+vt: perf
+vs: qal">היתה</span> <span class="w" data-tip="lex: פלגשׁ
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">פילגשׁ</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: wayq
+vs: qal">תלד</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: עמלק
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">עמלק</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עדה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -">תמנע</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: sg
+gn: f
+vt: perf">היתה</span> <span class="w" data-tip="lex: פלגשׁ
+ps: -
+nu: sg
+gn: f
+vt: -">פילגשׁ</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: impf">תלד</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: עמלק
+ps: -
+nu: sg
+gn: unknown
+vt: -">עמלק</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -">עדה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">13</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רעואל</span> <span class="w" data-tip="lex: נחת
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">נחת</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">זרח</span> <span class="w" data-tip="lex: שׁמה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁמ<span class="plus-mt">ה</span></span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מזה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מזה</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: unknown
+vt: perf
+vs: qal">היו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: בשׂמת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">שׂ</span>מת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -">רעואל</span> <span class="w" data-tip="lex: נחת
+ps: -
+nu: sg
+gn: m
+vt: -">נחת</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -">זרח</span> <span class="w" data-tip="lex: שׁמה
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׁמ<span class="plus-sp">ח</span></span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מזה
+ps: -
+nu: sg
+gn: m
+vt: -">מזה</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: unknown
+vt: perf">היו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: מחלת
+ps: -
+nu: sg
+gn: unknown
+vt: -">מ<span class="plus-sp">ח</span><span class="plus-sp">ל</span>ת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">14</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: unknown
+vt: perf
+vs: qal">היו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">ב<span class="plus-mt">ת</span></span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: wayq
+vs: qal">תלד</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יע<span class="plus-mt">י</span>שׁ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יעלם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">קרח</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: unknown
+vt: perf">היו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: unknown
+vt: -">ב<span class="plus-sp">ן</span></span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ילד
+ps: p3
+nu: sg
+gn: f
+vt: impf">תלד</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: unknown
+vt: -">יע<span class="plus-sp">ו</span>שׁ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -">יעלם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -">קרח</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">15</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: בכר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בכור</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תימן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: אומר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">א<span class="plus-mt">ו</span>מר</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: צפו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צפו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">קנז</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: בכר
+ps: -
+nu: sg
+gn: m
+vt: -">בכור</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -">תימן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: אומר
+ps: -
+nu: sg
+gn: unknown
+vt: -">אמר</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: צפו
+ps: -
+nu: sg
+gn: m
+vt: -">צפו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -">קנז</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">16</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -"><span class="plus-mt">א</span><span class="plus-mt">ל</span><span class="plus-mt">ו</span><span class="plus-mt">ף</span></span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -"><span class="plus-mt">ק</span><span class="plus-mt">ר</span><span class="plus-mt">ח</span></span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: געתם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">געתם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: עמלק
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">עמלק</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אליפז</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עדה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: געתם
+ps: -
+nu: sg
+gn: m
+vt: -">געתם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: עמלק
+ps: -
+nu: sg
+gn: unknown
+vt: -">עמלק</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: אליפז
+ps: -
+nu: sg
+gn: m
+vt: -">אליפז</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עדה
+ps: -
+nu: sg
+gn: f
+vt: -">עדה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">17</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רעואל</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: נחת
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">נחת</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">זרח</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: שׁמה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁמ<span class="plus-mt">ה</span></span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: מזה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מזה</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">רעואל</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: בשׂמת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">שׂ</span>מת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -">רעואל</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: נחת
+ps: -
+nu: sg
+gn: m
+vt: -">נחת</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -">זרח</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: שׁמה
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׁמ<span class="plus-sp">ח</span></span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: מזה
+ps: -
+nu: sg
+gn: m
+vt: -">מזה</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: רעואל
+ps: -
+nu: sg
+gn: m
+vt: -">רעואל</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: מחלת
+ps: -
+nu: sg
+gn: unknown
+vt: -">מ<span class="plus-sp">ח</span><span class="plus-sp">ל</span>ת</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">18</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יעושׁ</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יעלם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">קרח</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: יעושׁ
+ps: -
+nu: sg
+gn: m
+vt: -">יעושׁ</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: יעלם
+ps: -
+nu: sg
+gn: m
+vt: -">יעלם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: קרח
+ps: -
+nu: sg
+gn: m
+vt: -">קרח</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁת</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">19</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופיהם</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -
+vs: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופיהם</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -"><span class="plus-sp">ע</span><span class="plus-sp">שׂ</span><span class="plus-sp">ו</span></span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -">הוא</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">20</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">שׂעיר</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חרי</span> <span class="w" data-tip="lex: ישׁב
+ps: unknown
+nu: pl
+gn: m
+vt: ptca
+vs: qal">ישׁבי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">לוטן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁובל</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׂעיר</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -">חרי</span> <span class="w" data-tip="lex: ישׁב
+ps: unknown
+nu: pl
+gn: m
+vt: ptca">ישׁבי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -">לוטן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -">שׁובל</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">21</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דשׁון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אצר</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דישׁן</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חרי</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">שׂעיר</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: unknown
+vt: -">ד<span class="plus-sp">י</span>שׁון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -">אצר</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -">דישׁן</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -">חרי</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׂעיר</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">22</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: m
+vt: wayq
+vs: qal">יהיו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">לוטן</span> <span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חרי</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: הימם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -"><span class="plus-mt">ה</span>ימם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אחות
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אחות</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">לוטן</span> <span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תמנע</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: היה
+ps: p3
+nu: pl
+gn: m
+vt: impf">יהיו</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -">לוטן</span> <span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -">חרי</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: הימם
+ps: -
+nu: sg
+gn: unknown
+vt: -"><span class="plus-sp">א</span>ימם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אחות
+ps: -
+nu: sg
+gn: f
+vt: -">אחות</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -">לוטן</span> <span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -">תמנע</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">23</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁובל</span> <span class="w" data-tip="lex: עלון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עלון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מנחת
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מנחת</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: עיבל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עיבל</span> <span class="w" data-tip="lex: שׁפו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁפו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אונם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אונם</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -">שׁובל</span> <span class="w" data-tip="lex: עלון
+ps: -
+nu: sg
+gn: m
+vt: -">עלון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מנחת
+ps: -
+nu: sg
+gn: m
+vt: -">מנחת</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: עיבל
+ps: -
+nu: sg
+gn: m
+vt: -">עיבל</span> <span class="w" data-tip="lex: שׁפו
+ps: -
+nu: sg
+gn: m
+vt: -">שׁפו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אונם
+ps: -
+nu: sg
+gn: m
+vt: -">אונם</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">24</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -"><span class="plus-mt">ו</span></span><span class="w" data-tip="lex: איה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">איה</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -
+vs: -">הוא</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">אשׁר</span> <span class="w" data-tip="lex: מצא
+ps: p3
+nu: sg
+gn: m
+vt: perf
+vs: qal">מצא</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: ימם
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">ימם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -"></span><span class="w" data-tip="lex: מדבר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מדבר</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: רעה
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc
+vs: qal">רעתו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חמור
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">חמרים</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אביו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: איה
+ps: -
+nu: sg
+gn: m
+vt: -">איה</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -">הוא</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -">אשׁר</span> <span class="w" data-tip="lex: מצא
+ps: p3
+nu: sg
+gn: m
+vt: perf">מצא</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: אימי
+ps: -
+nu: pl
+gn: m
+vt: -"><span class="plus-sp">א</span>ימ<span class="plus-sp">י</span>ם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: מדבר
+ps: -
+nu: sg
+gn: m
+vt: -">מדבר</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: רעה
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc">רעתו</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חמור
+ps: -
+nu: pl
+gn: m
+vt: -">חמרים</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -">אביו</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">25</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span> <span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דשׁן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span> <span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: unknown
+vt: -">ד<span class="plus-sp">י</span>שׁ<span class="plus-sp">ו</span>ן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">26</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דישׁן</span> <span class="w" data-tip="lex: חמדן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חמדן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אשׁבן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אשׁבן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -"><span class="plus-mt">ו</span></span><span class="w" data-tip="lex: יתרן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יתרן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: כרן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">כרן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: unknown
+vt: -">דישׁ<span class="plus-sp">ו</span>ן</span> <span class="w" data-tip="lex: חמדן
+ps: -
+nu: sg
+gn: m
+vt: -">חמדן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אשׁבן
+ps: -
+nu: sg
+gn: m
+vt: -">אשׁבן</span> <span class="w" data-tip="lex: יתרן
+ps: -
+nu: sg
+gn: m
+vt: -">יתרן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: כרן
+ps: -
+nu: sg
+gn: m
+vt: -">כרן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">27</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אצר</span> <span class="w" data-tip="lex: בלהן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בלהן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: זעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">זע<span class="plus-mt">ו</span>ן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: עקן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עקן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -">אצר</span> <span class="w" data-tip="lex: בלהן
+ps: -
+nu: sg
+gn: m
+vt: -">בלהן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: זעון
+ps: -
+nu: sg
+gn: unknown
+vt: -">ז<span class="plus-sp">ו</span>ען</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: עקן
+ps: -
+nu: sg
+gn: m
+vt: -">עקן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">28</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דישׁן</span> <span class="w" data-tip="lex: עוץ
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עוץ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: ארן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">א<span class="plus-mt">ר</span>ן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ו</span></span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -">דישׁן</span> <span class="w" data-tip="lex: עוץ
+ps: -
+nu: sg
+gn: m
+vt: -">עוץ</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: ארן
+ps: -
+nu: sg
+gn: unknown
+vt: -">א<span class="plus-sp">ד</span>ן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">29</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חרי</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">לוטן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁובל</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">צבעון</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -">חרי</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: לוטן
+ps: -
+nu: sg
+gn: m
+vt: -">לוטן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: שׁובל
+ps: -
+nu: sg
+gn: m
+vt: -">שׁובל</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: צבעון
+ps: -
+nu: sg
+gn: m
+vt: -">צבעון</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: ענה
+ps: -
+nu: sg
+gn: m
+vt: -">ענה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">30</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דשׁן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אצר</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">דישׁן</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חרי</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלפיהם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">שׂעיר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: דישׁון
+ps: -
+nu: sg
+gn: unknown
+vt: -">ד<span class="plus-sp">י</span>שׁ<span class="plus-sp">ו</span>ן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: אצר
+ps: -
+nu: sg
+gn: m
+vt: -">אצר</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: דישׁן
+ps: -
+nu: sg
+gn: m
+vt: -">דישׁן</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: חרי
+ps: -
+nu: sg
+gn: m
+vt: -">חרי</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אל<span class="plus-sp">ו</span>פיהם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: שׂעיר
+ps: -
+nu: sg
+gn: unknown
+vt: -">שׂעיר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">31</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: מלך
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">מלכים</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">אשׁר</span> <span class="w" data-tip="lex: מלך
+ps: p3
+nu: pl
+gn: unknown
+vt: perf
+vs: qal">מלכו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">פני</span> <span class="w" data-tip="lex: מלך
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc
+vs: qal">מלך</span> <span class="w" data-tip="lex: מלך
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מלך</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">בני</span> <span class="w" data-tip="lex: ישׂראל
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ישׂראל</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: מלך
+ps: -
+nu: pl
+gn: m
+vt: -">מלכים</span> <span class="w" data-tip="lex: אשׁר
+ps: -
+nu: -
+gn: -
+vt: -">אשׁר</span> <span class="w" data-tip="lex: מלך
+ps: p3
+nu: pl
+gn: unknown
+vt: perf">מלכו</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: פנה
+ps: -
+nu: pl
+gn: m
+vt: -">פני</span> <span class="w" data-tip="lex: מלך
+ps: unknown
+nu: unknown
+gn: unknown
+vt: infc">מלך</span> <span class="w" data-tip="lex: מלך
+ps: -
+nu: sg
+gn: m
+vt: -">מלך</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: בן
+ps: -
+nu: pl
+gn: m
+vt: -">בני</span> <span class="w" data-tip="lex: ישׂראל
+ps: -
+nu: sg
+gn: unknown
+vt: -">ישׂראל</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">32</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: בלע
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בלע</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: בעור
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בעור</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עירו</span> <span class="w" data-tip="lex: דנהבה
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">דנהבה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: בלע
+ps: -
+nu: sg
+gn: m
+vt: -">בלע</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: בעור
+ps: -
+nu: sg
+gn: m
+vt: -">בעור</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -">עירו</span> <span class="w" data-tip="lex: דנהבה
+ps: -
+nu: sg
+gn: unknown
+vt: -">דנהבה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">33</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: בלע
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בלע</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: יובב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יובב</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">זרח</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: בצרה
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">בצרה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: בלע
+ps: -
+nu: sg
+gn: m
+vt: -">בלע</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: יובב
+ps: -
+nu: sg
+gn: m
+vt: -">יובב</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: זרח
+ps: -
+nu: sg
+gn: m
+vt: -">זרח</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: בצרה
+ps: -
+nu: sg
+gn: unknown
+vt: -">בצרה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">34</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: יובב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יובב</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: חשׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חשׁם</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: תימני
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">תימני</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: יובב
+ps: -
+nu: sg
+gn: m
+vt: -">יובב</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: חשׁם
+ps: -
+nu: sg
+gn: m
+vt: -">חשׁם</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: תימני
+ps: -
+nu: sg
+gn: m
+vt: -">תימני</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">35</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: חשׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">חשׁם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: הדד
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">הדד</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: בדד
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בדד</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: נכה
+ps: unknown
+nu: sg
+gn: m
+vt: ptca
+vs: hif">מכה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">את</span> <span class="w" data-tip="lex: מדין
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">מדי<span class="plus-mt">ן</span></span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: שׂדה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׂדה</span> <span class="w" data-tip="lex: מואב
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">מואב</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עירו</span> <span class="w" data-tip="lex: עוית
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">עוית</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: חשׁם
+ps: -
+nu: sg
+gn: m
+vt: -">חשׁם</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: הדד
+ps: -
+nu: sg
+gn: m
+vt: -">הדד</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: בדד
+ps: -
+nu: sg
+gn: m
+vt: -">בדד</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: נכה
+ps: unknown
+nu: sg
+gn: m
+vt: ptca">מכה</span> <span class="w" data-tip="lex: את
+ps: -
+nu: -
+gn: -
+vt: -">את</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -"><span class="plus-sp">ה</span></span><span class="w" data-tip="lex: מדיני
+ps: -
+nu: sg
+gn: unknown
+vt: -">מדי<span class="plus-sp">נ</span><span class="plus-sp">י</span></span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: שׂדה
+ps: -
+nu: sg
+gn: m
+vt: -">שׂדה</span> <span class="w" data-tip="lex: מואב
+ps: -
+nu: sg
+gn: unknown
+vt: -">מואב</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -">עירו</span> <span class="w" data-tip="lex: עוית
+ps: -
+nu: sg
+gn: unknown
+vt: -">עוית</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">36</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: הדד
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">הדד</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: שׂמלה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׂמלה</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: משׂרקה
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">משׂרקה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: הדד
+ps: -
+nu: sg
+gn: m
+vt: -">הדד</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: שׂמלה
+ps: -
+nu: sg
+gn: m
+vt: -">שׂמלה</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: משׂרקה
+ps: -
+nu: sg
+gn: unknown
+vt: -">משׂרקה</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">37</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: שׂמלה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׂמלה</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: שׁאול
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁאול</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">מ</span><span class="w" data-tip="lex: רחבות
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">רחבות</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ה</span><span class="w" data-tip="lex: נהר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">נהר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: שׂמלה
+ps: -
+nu: sg
+gn: m
+vt: -">שׂמלה</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: שׁאול
+ps: -
+nu: sg
+gn: m
+vt: -">שׁאול</span> <span class="w" data-tip="lex: מן
+ps: -
+nu: -
+gn: -
+vt: -">מ</span><span class="w" data-tip="lex: רחבות
+ps: -
+nu: sg
+gn: unknown
+vt: -">רחבות</span> <span class="w" data-tip="lex: ה
+ps: -
+nu: -
+gn: -
+vt: -">ה</span><span class="w" data-tip="lex: נהר
+ps: -
+nu: sg
+gn: m
+vt: -">נהר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">38</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: שׁאול
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁאול</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: בעל חנן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בעל חנן</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בן</span> <span class="w" data-tip="lex: עכבור
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עכבור</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: שׁאול
+ps: -
+nu: sg
+gn: m
+vt: -">שׁאול</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: בעל חנן
+ps: -
+nu: sg
+gn: m
+vt: -">בעל חנן</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -">בן</span> <span class="w" data-tip="lex: עכבור
+ps: -
+nu: sg
+gn: m
+vt: -">עכבור</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">39</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימת</span> <span class="w" data-tip="lex: בעל חנן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">בעל חנן</span> <span class="w" data-tip="lex: בן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -"><span class="plus-mt">ב</span><span class="plus-mt">ן</span></span> <span class="w" data-tip="lex: עכבור
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -"><span class="plus-mt">ע</span><span class="plus-mt">כ</span><span class="plus-mt">ב</span><span class="plus-mt">ו</span><span class="plus-mt">ר</span></span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: wayq
+vs: qal">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">תחתיו</span> <span class="w" data-tip="lex: הדר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">הד<span class="plus-mt">ר</span></span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">עירו</span> <span class="w" data-tip="lex: פעו
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">פעו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">שׁם</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אשׁתו</span> <span class="w" data-tip="lex: מהיטבאל
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">מה<span class="plus-mt">י</span>טבאל</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: מטרד
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">מטרד</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">בת</span> <span class="w" data-tip="lex: מי זהב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מי זהב</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מות
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימת</span> <span class="w" data-tip="lex: בעל חנן
+ps: -
+nu: sg
+gn: m
+vt: -">בעל חנן</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: מלך
+ps: p3
+nu: sg
+gn: m
+vt: impf">ימלך</span> <span class="w" data-tip="lex: תחת
+ps: -
+nu: pl
+gn: m
+vt: -">תחתיו</span> <span class="w" data-tip="lex: הדר
+ps: -
+nu: sg
+gn: unknown
+vt: -">הד<span class="plus-sp">ד</span></span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -">שׁם</span> <span class="w" data-tip="lex: עיר
+ps: -
+nu: sg
+gn: f
+vt: -">עירו</span> <span class="w" data-tip="lex: פעו
+ps: -
+nu: sg
+gn: unknown
+vt: -">פעו</span> <span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: sg
+gn: m
+vt: -">שׁם</span> <span class="w" data-tip="lex: אשׁה
+ps: -
+nu: sg
+gn: f
+vt: -">אשׁתו</span> <span class="w" data-tip="lex: מהיטבאל
+ps: -
+nu: sg
+gn: unknown
+vt: -">מהטבאל</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: מטרד
+ps: -
+nu: sg
+gn: f
+vt: -">מטרד</span> <span class="w" data-tip="lex: בת
+ps: -
+nu: sg
+gn: f
+vt: -">בת</span> <span class="w" data-tip="lex: מי זהב
+ps: -
+nu: sg
+gn: m
+vt: -">מי זהב</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">40</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">שׁמות</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: משׁפחה
+ps: -
+nu: pl
+gn: f
+vt: -
+vs: -">משׁפחתם</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: מקום
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">מקמתם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">שׁמתם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תמנע</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: עלוה
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">עלוה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: יתת
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">יתת</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: ו
+ps: -
+nu: -
+gn: -
+vt: -">ו</span><span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -">שׁמות</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: משׁפחה
+ps: -
+nu: pl
+gn: f
+vt: -">משׁפח<span class="plus-sp">ו</span>תם</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: מקום
+ps: -
+nu: pl
+gn: m
+vt: -">מק<span class="plus-sp">ו</span>מ<span class="plus-sp">ו</span>תם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: שׁם
+ps: -
+nu: pl
+gn: m
+vt: -">שׁמ<span class="plus-sp">ו</span>תם</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: תמנע
+ps: -
+nu: sg
+gn: unknown
+vt: -">תמנע</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: עלוה
+ps: -
+nu: sg
+gn: unknown
+vt: -">עלוה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: יתת
+ps: -
+nu: sg
+gn: m
+vt: -">יתת</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">41</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אהליבמה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: פינן
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">פינן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: אהליבמה
+ps: -
+nu: sg
+gn: f
+vt: -">אהליבמה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: sg
+gn: m
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: פינן
+ps: -
+nu: sg
+gn: m
+vt: -">פינן</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">42</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">קנז</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">תימן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: מבצר
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מבצר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: קנז
+ps: -
+nu: sg
+gn: unknown
+vt: -">קנז</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: תימן
+ps: -
+nu: sg
+gn: unknown
+vt: -">תימן</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: מבצר
+ps: -
+nu: sg
+gn: m
+vt: -">מבצר</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="vnum" rowspan="2">43</td>
+            <td class="heb bhsa-row" dir="rtl" lang="he"><span class="src-label">MT</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: מגדיאל
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">מגד<span class="plus-mt">י</span>אל</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אלוף</span> <span class="w" data-tip="lex: עירם
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עירם</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -
+vs: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">אלופי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ל</span><span class="w" data-tip="lex: מושׁב
+ps: -
+nu: pl
+gn: m
+vt: -
+vs: -">משׁ<span class="plus-mt">ב</span>תם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -
+vs: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">ארץ</span> <span class="w" data-tip="lex: אחזה
+ps: -
+nu: sg
+gn: f
+vt: -
+vs: -">אחזתם</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -
+vs: -">הוא</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">עשׂו</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -
+vs: -">אבי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -
+vs: -">אדום</span></td>
+        </tr>
+        <tr class="verse-group">
+            <td class="heb sp-row" dir="rtl" lang="he"><span class="src-label">SP</span><span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: מגדיאל
+ps: -
+nu: sg
+gn: unknown
+vt: -">מגדאל</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: sg
+gn: m
+vt: -">אלוף</span> <span class="w" data-tip="lex: עירם
+ps: -
+nu: sg
+gn: m
+vt: -">עירם</span> <span class="w" data-tip="lex: אלה
+ps: -
+nu: pl
+gn: unknown
+vt: -">אלה</span> <span class="w" data-tip="lex: אלוף
+ps: -
+nu: pl
+gn: m
+vt: -">אלופי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span> <span class="w" data-tip="lex: ל
+ps: -
+nu: -
+gn: -
+vt: -">ל</span><span class="w" data-tip="lex: משׁפחה
+ps: -
+nu: pl
+gn: f
+vt: -">משׁ<span class="plus-sp">פ</span><span class="plus-sp">ח</span><span class="plus-sp">ו</span>תם</span> <span class="w" data-tip="lex: ב
+ps: -
+nu: -
+gn: -
+vt: -">ב</span><span class="w" data-tip="lex: ארץ
+ps: -
+nu: sg
+gn: unknown
+vt: -">ארץ</span> <span class="w" data-tip="lex: אחזה
+ps: -
+nu: sg
+gn: f
+vt: -">אחזתם</span> <span class="w" data-tip="lex: הוא
+ps: p3
+nu: sg
+gn: m
+vt: -">הוא</span> <span class="w" data-tip="lex: עשׂו
+ps: -
+nu: sg
+gn: m
+vt: -">עשׂו</span> <span class="w" data-tip="lex: אב
+ps: -
+nu: sg
+gn: m
+vt: -">אבי</span> <span class="w" data-tip="lex: אדום
+ps: -
+nu: sg
+gn: unknown
+vt: -">אדום</span></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+<nav class="chapter-nav"><a href="genesis_35.html">◀ בראשית 35</a> <a href="index.html">index</a> <a href="genesis_37.html">▶ בראשית 37</a></nav>
+
+<footer>
+  <p>BHSA data: ETCBC, Amsterdam. SP data: Stefan Schorch et al. Rendered via Text-Fabric.</p>
+</footer>
+
+<script>
+  const tip = document.createElement('div');
+  tip.id = 'tip';
+  document.body.appendChild(tip);
+
+  document.querySelectorAll('.w[data-tip]').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      tip.textContent = el.dataset.tip;
+      tip.style.visibility = 'hidden';
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      const top = r.top >= th + 12
+        ? r.top + window.scrollY - th - 8
+        : r.bottom + window.scrollY + 8;
+      const left = Math.max(8, Math.min(
+        r.left + window.scrollX + r.width / 2 - tw / 2,
+        window.innerWidth - tw - 8
+      ));
+      tip.style.top = top + 'px';
+      tip.style.left = left + 'px';
+      tip.style.visibility = 'visible';
+    });
+    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
+</script>
+</body>
+</html>
