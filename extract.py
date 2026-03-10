@@ -110,8 +110,10 @@ def render_verse(word_data, char_marks, extra_class):
             esc = html.escape(cluster)
             inner += f'<span class="{extra_class}">{esc}</span>' if marks[i] else esc
             i = j
-        tip_lines = [f"lex: {lex}", f"nu: {nu}"]
-        tip_lines += [f"{k}: {v}" for k, v in extras.items() if v]
+        tip_lines = [f"lex: {lex}", f"ps: {extras.get('ps', '')}", f"nu: {nu}",
+                     f"gn: {extras.get('gn', '')}", f"vt: {extras.get('vt', '')}"]
+        if 'vs' in extras:
+            tip_lines.append(f"vs: {extras['vs']}")
         tooltip = html.escape("\n".join(tip_lines))
         spans.append(f'<span class="w" data-tip="{tooltip}">{inner}</span>{html.escape(trailer)}')
     return "".join(spans).strip()
@@ -360,12 +362,12 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 if __name__ == "__main__":
     print("Loading BHSA...")
     bhsa_api = load_bhsa("bhsa/tf/2021")
-    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8", extra_feats=("vt", "ps", "gn", "vs"))
+    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8", extra_feats=("ps", "gn", "vt", "vs"))
     print(f"  {len(bhsa_verses)} verses extracted")
 
     print("Loading SP...")
     sp_api = load_sp("sp/tf/6.0.3")
-    sp_verses = get_verse_texts(sp_api, "Exodus", 20, "word", "g_cons_utf8", "trailer", extra_feats=("vt", "ps", "gn"))
+    sp_verses = get_verse_texts(sp_api, "Exodus", 20, "word", "g_cons_utf8", "trailer", extra_feats=("ps", "gn", "vt"))
     print(f"  {len(sp_verses)} verses extracted")
 
     print("Generating HTML...")
