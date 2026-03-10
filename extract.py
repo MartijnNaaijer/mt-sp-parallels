@@ -291,7 +291,6 @@ def generate_html(bhsa_verses, sp_verses, out_path):
   td.sp-row   .src-label {{ background: #f5e8de; color: #8b4513; }}
 
   .w {{
-    position: relative;
     cursor: default;
     border-radius: 2px;
     transition: background 0.1s;
@@ -299,12 +298,9 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 
   .w:hover {{ background: #ffe9a0; }}
 
-  .w[data-tip]:hover::after {{
-    content: attr(data-tip);
+  #tip {{
+    display: none;
     position: absolute;
-    bottom: calc(100% + 4px);
-    left: 50%;
-    transform: translateX(-50%);
     background: #222;
     color: #fff;
     font-family: 'Frank Ruhl Libre', serif;
@@ -315,19 +311,7 @@ def generate_html(bhsa_verses, sp_verses, out_path):
     direction: ltr;
     text-align: left;
     pointer-events: none;
-    z-index: 10;
-  }}
-
-  .w[data-tip]:hover::before {{
-    content: '';
-    position: absolute;
-    bottom: calc(100% + 0px);
-    left: 50%;
-    transform: translateX(-50%);
-    border: 4px solid transparent;
-    border-top-color: #222;
-    pointer-events: none;
-    z-index: 10;
+    z-index: 100;
   }}
 
   .plus-mt {{ color: #1a5bbf; font-weight: bold; }}
@@ -363,6 +347,32 @@ def generate_html(bhsa_verses, sp_verses, out_path):
   <p>BHSA data: ETCBC, Amsterdam. SP data: Stefan Schorch et al. Rendered via Text-Fabric.</p>
 </footer>
 
+<script>
+  const tip = document.createElement('div');
+  tip.id = 'tip';
+  document.body.appendChild(tip);
+
+  document.querySelectorAll('.w[data-tip]').forEach(el => {{
+    el.addEventListener('mouseenter', () => {{
+      tip.textContent = el.dataset.tip;
+      tip.style.visibility = 'hidden';
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      const top = r.top >= th + 12
+        ? r.top + window.scrollY - th - 8
+        : r.bottom + window.scrollY + 8;
+      const left = Math.max(8, Math.min(
+        r.left + window.scrollX + r.width / 2 - tw / 2,
+        window.innerWidth - tw - 8
+      ));
+      tip.style.top = top + 'px';
+      tip.style.left = left + 'px';
+      tip.style.visibility = 'visible';
+    }});
+    el.addEventListener('mouseleave', () => {{ tip.style.display = 'none'; }});
+  }});
+</script>
 </body>
 </html>
 """
