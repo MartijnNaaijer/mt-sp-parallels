@@ -2,7 +2,7 @@
 Generate side-by-side MT/SP HTML pages for every chapter in the Pentateuch.
 Run from the tf_claude/ parent directory:
     python parallel_mt_sp/src/generate.py
-Outputs one HTML file per chapter plus index.html into parallel_texts_sp_mt_pentateuch/.
+Outputs one HTML file per chapter plus index.html into docs/.
 """
 
 import sys
@@ -16,7 +16,7 @@ from html_render import write_chapter_html, write_index_html, chapter_filename
 
 OUT_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "parallel_texts_sp_mt_pentateuch",
+    "docs",
 )
 
 PENTATEUCH = [
