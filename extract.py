@@ -4,7 +4,7 @@ BHSA uses pointed Hebrew (g_word_utf8 + trailer_utf8).
 SP uses consonantal Hebrew (g_cons_utf8 + trailer).
 """
 
-import sys, io, html, re
+import sys, io, html, re, difflib, unicodedata
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 
@@ -51,17 +51,67 @@ def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat):
     for vnode in Lt.d(chap_node, otype="verse"):
         vnum = Ft.verse.v(vnode)
         words = Lt.d(vnode, otype=word_otype)
-        spans = []
+        word_data = []
         for w in words:
             t = getattr(Ft, text_feat).v(w) or ""
             tr = getattr(Ft, trailer_feat).v(w) or ""
             lex = clean_lex(Ft.lex_utf8.v(w) or "")
             nu = Ft.nu.v(w) or ""
-            tooltip = html.escape(f"lex: {lex}\nnu: {nu}")
-            word_html = f'<span class="w" data-tip="{tooltip}">{html.escape(t)}</span>{html.escape(tr)}'
-            spans.append(word_html)
-        result[vnum] = "".join(spans).strip()
+            word_data.append((t, tr, lex, nu))
+        result[vnum] = word_data
     return result
+
+
+def diff_verses(mt_words, sp_words):
+    HCONS = re.compile(r'[\u05d0-\u05ea\ufb1d-\ufb4f]')
+    mt_index, sp_index = [], []
+    for wi, (text, _, _, _) in enumerate(mt_words):
+        for ci, ch in enumerate(text):
+            if HCONS.match(ch):
+                mt_index.append((wi, ci))
+    for wi, (text, _, _, _) in enumerate(sp_words):
+        for ci, ch in enumerate(text):
+            if HCONS.match(ch):
+                sp_index.append((wi, ci))
+    def base_cons(ch):
+        # Decompose FB-block precomposed forms (e.g. U+FB2A shin-with-dot → U+05E9)
+        # so that BHSA's decomposed and SP's precomposed shinot compare as equal.
+        return unicodedata.normalize('NFKD', ch)[0]
+
+    mt_str = ''.join(base_cons(mt_words[wi][0][ci]) for wi, ci in mt_index)
+    sp_str = ''.join(base_cons(sp_words[wi][0][ci]) for wi, ci in sp_index)
+    mt_marks = [[False]*len(t) for t, _, _, _ in mt_words]
+    sp_marks = [[False]*len(t) for t, _, _, _ in sp_words]
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, mt_str, sp_str, autojunk=False).get_opcodes():
+        if tag in ('delete', 'replace'):
+            for k in range(i1, i2):
+                wi, ci = mt_index[k]
+                mt_marks[wi][ci] = True
+        if tag in ('insert', 'replace'):
+            for k in range(j1, j2):
+                wi, ci = sp_index[k]
+                sp_marks[wi][ci] = True
+    return mt_marks, sp_marks
+
+
+def render_verse(word_data, char_marks, extra_class):
+    spans = []
+    for (text, trailer, lex, nu), marks in zip(word_data, char_marks):
+        inner = ""
+        i = 0
+        while i < len(text):
+            # Collect base character plus any following combining characters as one cluster
+            cluster = text[i]
+            j = i + 1
+            while j < len(text) and unicodedata.category(text[j]).startswith('M'):
+                cluster += text[j]
+                j += 1
+            esc = html.escape(cluster)
+            inner += f'<span class="{extra_class}">{esc}</span>' if marks[i] else esc
+            i = j
+        tooltip = html.escape(f"lex: {lex}\nnu: {nu}")
+        spans.append(f'<span class="w" data-tip="{tooltip}">{inner}</span>{html.escape(trailer)}')
+    return "".join(spans).strip()
 
 
 def generate_html(bhsa_verses, sp_verses, out_path):
@@ -69,8 +119,15 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 
     rows = []
     for vnum in all_verse_nums:
-        bhsa_text = bhsa_verses.get(vnum, "—")
-        sp_text = sp_verses.get(vnum, "—")
+        mt_words = bhsa_verses.get(vnum)
+        sp_words = sp_verses.get(vnum)
+        if mt_words and sp_words:
+            mt_marks, sp_marks = diff_verses(mt_words, sp_words)
+            bhsa_text = render_verse(mt_words, mt_marks, "plus-mt")
+            sp_text   = render_verse(sp_words, sp_marks, "plus-sp")
+        else:
+            bhsa_text = render_verse(mt_words, [[False]*len(t) for t,_,_,_ in mt_words], "plus-mt") if mt_words else "—"
+            sp_text   = render_verse(sp_words, [[False]*len(t) for t,_,_,_ in sp_words], "plus-sp") if sp_words else "—"
         rows.append(f"""
         <tr class="verse-group">
             <td class="vnum" rowspan="2">{vnum}</td>
@@ -254,6 +311,9 @@ def generate_html(bhsa_verses, sp_verses, out_path):
     pointer-events: none;
     z-index: 10;
   }}
+
+  .plus-mt {{ color: #1a5bbf; font-weight: bold; }}
+  .plus-sp {{ color: #c0392b; font-weight: bold; }}
 
   footer {{
     max-width: 960px;
