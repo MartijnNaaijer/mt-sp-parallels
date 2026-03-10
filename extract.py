@@ -328,8 +328,7 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 
 <header>
   <h1>Exodus / שמות Chapter 20</h1>
-  <p>Hebrew texts of the Ten Commandments aligned verse by verse.</p>
-  <div class="legend">
+<div class="legend">
     <span><span class="dot dot-bhsa"></span> BHSA 2021 — Biblia Hebraica Stuttgartensia Amstelodamensis (consonantal)</span>
     <span><span class="dot dot-sp"></span> SP 6.0.3 — Samaritan Pentateuch (consonantal)</span>
   </div>
