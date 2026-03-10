@@ -28,17 +28,17 @@ from tf.fabric import Fabric
 
 def load_bhsa(path):
     F = Fabric(locations=path, silent=True)
-    api = F.load("otype book chapter verse g_cons_utf8 trailer_utf8 lex_utf8 nu", silent=True)
+    api = F.load("otype book chapter verse g_cons_utf8 trailer_utf8 lex_utf8 nu vt ps gn vs", silent=True)
     return api
 
 
 def load_sp(path):
     F = Fabric(locations=path, silent=True)
-    api = F.load("otype book chapter verse g_cons_utf8 trailer lex_utf8 nu", silent=True)
+    api = F.load("otype book chapter verse g_cons_utf8 trailer lex_utf8 nu vt ps gn", silent=True)
     return api
 
 
-def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat):
+def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat, extra_feats=()):
     Ft = api.F
     Lt = api.L
     Tt = api.T
@@ -57,7 +57,8 @@ def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat):
             tr = getattr(Ft, trailer_feat).v(w) or ""
             lex = clean_lex(Ft.lex_utf8.v(w) or "")
             nu = Ft.nu.v(w) or ""
-            word_data.append((t, tr, lex, nu))
+            extras = {f: (getattr(Ft, f).v(w) or "") for f in extra_feats}
+            word_data.append((t, tr, lex, nu, extras))
         result[vnum] = word_data
     return result
 
@@ -65,11 +66,11 @@ def get_verse_texts(api, book, chapter, word_otype, text_feat, trailer_feat):
 def diff_verses(mt_words, sp_words):
     HCONS = re.compile(r'[\u05d0-\u05ea\ufb1d-\ufb4f]')
     mt_index, sp_index = [], []
-    for wi, (text, _, _, _) in enumerate(mt_words):
+    for wi, (text, *_) in enumerate(mt_words):
         for ci, ch in enumerate(text):
             if HCONS.match(ch):
                 mt_index.append((wi, ci))
-    for wi, (text, _, _, _) in enumerate(sp_words):
+    for wi, (text, *_) in enumerate(sp_words):
         for ci, ch in enumerate(text):
             if HCONS.match(ch):
                 sp_index.append((wi, ci))
@@ -80,8 +81,8 @@ def diff_verses(mt_words, sp_words):
 
     mt_str = ''.join(base_cons(mt_words[wi][0][ci]) for wi, ci in mt_index)
     sp_str = ''.join(base_cons(sp_words[wi][0][ci]) for wi, ci in sp_index)
-    mt_marks = [[False]*len(t) for t, _, _, _ in mt_words]
-    sp_marks = [[False]*len(t) for t, _, _, _ in sp_words]
+    mt_marks = [[False]*len(t) for t, *_ in mt_words]
+    sp_marks = [[False]*len(t) for t, *_ in sp_words]
     for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, mt_str, sp_str, autojunk=False).get_opcodes():
         if tag in ('delete', 'replace'):
             for k in range(i1, i2):
@@ -96,7 +97,7 @@ def diff_verses(mt_words, sp_words):
 
 def render_verse(word_data, char_marks, extra_class):
     spans = []
-    for (text, trailer, lex, nu), marks in zip(word_data, char_marks):
+    for (text, trailer, lex, nu, extras), marks in zip(word_data, char_marks):
         inner = ""
         i = 0
         while i < len(text):
@@ -109,7 +110,9 @@ def render_verse(word_data, char_marks, extra_class):
             esc = html.escape(cluster)
             inner += f'<span class="{extra_class}">{esc}</span>' if marks[i] else esc
             i = j
-        tooltip = html.escape(f"lex: {lex}\nnu: {nu}")
+        tip_lines = [f"lex: {lex}", f"nu: {nu}"]
+        tip_lines += [f"{k}: {v}" for k, v in extras.items() if v]
+        tooltip = html.escape("\n".join(tip_lines))
         spans.append(f'<span class="w" data-tip="{tooltip}">{inner}</span>{html.escape(trailer)}')
     return "".join(spans).strip()
 
@@ -126,8 +129,8 @@ def generate_html(bhsa_verses, sp_verses, out_path):
             bhsa_text = render_verse(mt_words, mt_marks, "plus-mt")
             sp_text   = render_verse(sp_words, sp_marks, "plus-sp")
         else:
-            bhsa_text = render_verse(mt_words, [[False]*len(t) for t,_,_,_ in mt_words], "plus-mt") if mt_words else "—"
-            sp_text   = render_verse(sp_words, [[False]*len(t) for t,_,_,_ in sp_words], "plus-sp") if sp_words else "—"
+            bhsa_text = render_verse(mt_words, [[False]*len(t) for t,*_ in mt_words], "plus-mt") if mt_words else "—"
+            sp_text   = render_verse(sp_words, [[False]*len(t) for t,*_ in sp_words], "plus-sp") if sp_words else "—"
         rows.append(f"""
         <tr class="verse-group">
             <td class="vnum" rowspan="2">{vnum}</td>
@@ -357,12 +360,12 @@ def generate_html(bhsa_verses, sp_verses, out_path):
 if __name__ == "__main__":
     print("Loading BHSA...")
     bhsa_api = load_bhsa("bhsa/tf/2021")
-    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8")
+    bhsa_verses = get_verse_texts(bhsa_api, "Exodus", 20, "word", "g_cons_utf8", "trailer_utf8", extra_feats=("vt", "ps", "gn", "vs"))
     print(f"  {len(bhsa_verses)} verses extracted")
 
     print("Loading SP...")
     sp_api = load_sp("sp/tf/6.0.3")
-    sp_verses = get_verse_texts(sp_api, "Exodus", 20, "word", "g_cons_utf8", "trailer")
+    sp_verses = get_verse_texts(sp_api, "Exodus", 20, "word", "g_cons_utf8", "trailer", extra_feats=("vt", "ps", "gn"))
     print(f"  {len(sp_verses)} verses extracted")
 
     print("Generating HTML...")
